@@ -1,0 +1,12 @@
+<div class="memory mt-3">
+    <h5>Memory</h5>
+    <fieldset id="memoryRadioDefault">
+        <div class="border form-check p-0 rounded mt-3" *ngFor="let item of memoryDetails;">
+            <input class="d-block form-check-input h-100 w-100 m-0" type="radio" name="memoryRadioDefault"
+                id="memoryRadioDefault1" [checked]="product.memory.id == item.id" (click)="selectItem(item)">
+            <label class="form-check-label p-2 w-100" for="memoryRadioDefault1">
+                {{item.memoryDetails}}
+            </label>
+        </div>
+    </fieldset>
+</div>

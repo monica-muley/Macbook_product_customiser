@@ -1,0 +1,12 @@
+<div class="processor mt-3">
+    <h5>Processor</h5>
+    <fieldset id="processorRadioDefault">
+        <div class="border form-check p-0 rounded mt-3" *ngFor="let item of processorDetails;">
+            <input class="d-block form-check-input h-100 w-100 m-0" type="radio" name="processorRadioDefault"
+                id="processorRadioDefault1" [checked]="product.processor.id == item.id" (click)="selectItem(item)">
+            <label class="form-check-label p-2 w-100" for="processorRadioDefault1">
+                {{item.processorDetails}}
+            </label>
+        </div>
+    </fieldset>
+</div>

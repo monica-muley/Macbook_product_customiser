@@ -1,0 +1,12 @@
+<div class="graphics mt-3">
+    <h5>Graphics</h5>
+    <fieldset id="graphicsRadioDefault">
+        <div class="border form-check p-0 rounded mt-3" *ngFor="let item of graphicsDetails">
+            <input class="d-block form-check-input h-100 w-100 m-0" type="radio" name="graphicsRadioDefault"
+                id="graphicsRadioDefault1" [checked]="product.graphics.id == item.id" (click)="selectItem(item)">
+            <label class="form-check-label p-2 w-100" for="graphicsRadioDefault1">
+                {{item.graphicsDetails}}
+            </label>
+        </div>
+    </fieldset>
+</div>

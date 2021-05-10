@@ -1,0 +1,12 @@
+<div class="storage mt-3 mb-5">
+    <h5>Storage</h5>
+    <fieldset id="storageRadioDefault">
+        <div class="border form-check p-0 rounded mt-3" *ngFor="let item of storageDetails">
+            <input class="d-block form-check-input h-100 w-100 m-0" type="radio" name="storageRadioDefault"
+                id="storageRadioDefault1" [checked]="product.storage.id == item.id" (click)="selectItem(item)">
+            <label class="form-check-label p-2 w-100" for="storageRadioDefault1">
+                {{item.storageDetails}}
+            </label>
+        </div>
+    </fieldset>
+</div>

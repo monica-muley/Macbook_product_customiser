@@ -1,0 +1,31 @@
+.product{
+    .product-image img {
+        height: auto;
+        cursor: pointer;
+    }
+    .product-spec h2 {
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: .004em;
+        font-family: sans-serif;
+    }
+    ul.addOns{
+        list-style-type: none; /* Remove bullets */
+        li{
+            font-weight: 400;
+            letter-spacing: -.016em;
+            line-height: 1.42861;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+    }
+}
+.footer {
+    line-height: 1.42861;
+    background-color: #f8f8f8;
+    bottom: 0;
+    height: 4.5rem;
+    span {
+        width: 16rem;
+    }
+}

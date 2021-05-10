@@ -1,0 +1,48 @@
+<div class="container product">
+    <div class="row mt-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 product-image p-4">
+            <img class="mw-100" [src]="product.image" alt="16‑inch MacBook Pro - Space Grey">
+        </div>
+        <div class="col-md-5 product-spec p-4">
+            <h2>{{ product.name }}</h2>
+            <div data-specs-list="" class="border-bottom border-dark">
+                <ul class="addOns p-0" role="list" aria-label="16-inch MacBook Pro - Space Grey specification">
+                    <li class="mb-2" role="listitem">
+                        <span>{{ product.processor.processorDetails }}</span>
+                    </li>
+                    <li class="mb-2" role="listitem">
+                        <span>{{ product.memory.memoryDetails }}</span>
+                    </li>
+                    <li class="mb-2" role="listitem">
+                        <span>{{ product.graphics.graphicsDetails }}</span>
+                    </li>
+                    <li class="mb-2" role="listitem">
+                        <span>{{ product.storage.storageDetails }}</span>
+                    </li>
+                    <li class="mb-2" role="listitem">
+                        <span>{{ product.ratina }}</span>
+                    </li>
+                    <li class="mb-2" role="listitem">
+                        <span>{{ product.touchBar }}</span>
+                    </li>
+                    <li class="mb-2" role="listitem">
+                        <span>{{ product.keyboard }}</span>
+                    </li>
+                </ul>
+            </div>
+            <app-processor [product]="product" (processorEvent)="onProcessorSelection($event)"></app-processor>
+            <app-memory [product]="product" (memoryEvent)="onMemorySelection($event)"></app-memory>
+            <app-graphics [product]="product" (graphicsEvent)="onGraphicsSelection($event)"></app-graphics>
+            <app-storage [product]="product" (storageEvent)="onStorageSelection($event)"></app-storage>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+<footer class="footer position-sticky w-100 p-3 float-left">
+    <div class="container">
+        <span class="float-right font-weight-bold text-right">From ₹{{totalEmi | number: '1.2-2'}}/mo. with EMI OR
+            ₹{{ product.finalPrice | number: '1.2-2'
+            }}</span>
+    </div>
+</footer>
