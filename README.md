@@ -1,6 +1,6 @@
 # ProductCustomiserApplication
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7. This is single page responsive design application.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7. The base price of this product is ₹2,39,900. The product has a set of components like Processor, Memory, Graphics and Storage. Product price is getting updated as per the varient selection. This is single page responsive design application.
 It has EMI calculator which calculate EMI with 13% interest rate per annum over the span of 1 year along with the total price.
 
 Used technologies for to develop this project:
