@@ -1,6 +1,12 @@
 # ProductCustomiserApplication
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7. This is single page responsive design application.
+It has EMI calculator which calculate EMI with 13% interest rate per annum over the span of 1 year along with the total price.
+
+Below technologies for to develop this project:
+JavaScript framework- Angular 11
+CSS - Bootstrap
+CSS Preprocessors - SASS (Custom CSS)
 
 ## Development server
 
